@@ -1,0 +1,12 @@
+name: 'x-yuri/store-secret'
+description: 'Store a secret in a file'
+inputs:
+    secret:
+        description: 'Secret name to store'
+        required: true
+    dst:
+        description: 'Where to store the secret'
+        required: true
+runs:
+    using: 'node16'
+    main: 'dist/index.js'
